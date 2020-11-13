@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+            rel="stylesheet"
+            type="text/css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    </head>
+    <body class="page">
+        <div class="progress"></div>
+        <header class="header container">
+            <button class="open">
+                <span></span>
+            </button>
+            <input type="search" placeholder="Поиск" class="search-input header-input">
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Города герои</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Инфобюро</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Видео</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Истории</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="mobile-navigation">
+                <button class="close">
+                    <span></span>
+                </button>
+                <input type="search" placeholder="Поиск" class="search-input">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Города герои</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Инфобюро</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Видео</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Истории</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#" class="navigation-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.navigation -->
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="Логотип" class="logo">
+            </a>
+        </header>
+        <!-- /.header -->
+        <main class="main">
+            <section class="section section-lead container">
+                <h1 class="visually-hidden">Великая Отечественная Война</h1>
+                <div class="lead-left">
+                    <p class="lead__description">Великая Отечественная война — война Союза Советских
+                        Социалистических Республик, начавшаяся с вторжения на советскую территорию войск
+                        нацистской Германии и её европейских союзников и закончившаяся освобождением от
+                        нацизма стран Центральной и Восточной Европы.</p>
+                    <a href="#" class="lead__link">Поделиться своей историей</a>
+                </div>
+                <img src="assets/img/main-image.png" alt="Фото солдатов" class="lead__image">
+            </section>
+            <!-- /.lead -->
+            <section class="section section-video container">
+                <div class="line">
+                    <h2 class="section__head">Видео</h2>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="video-left">
+                                <h3 class="video__title">Великая Война. 1 Серия. Барбаросса.</h3>
+                                <p class="video__description">18 декабря 1940-го года Гитлер подписал директиву
+                                    № 21, известную сегодня как план "Барбаросса". Широко распространено
+                                    заблуждение, что немецкие планы попадали на стол Сталина едва ли не сразу после
+                                    их подписания. В действительности, точную дату германского нападения советская
+                                    разведка определить не смогла. 22 июня 1941 года немецкие войска пересекли
+                                    границу СССР. Основные силы Красной Армии были сосредоточены далеко от западной
+                                    границы и не смогли оказать должного сопротивления врагу. Советскому народу его
+                                    армии, руководству страны предстояло напрячь все силы, чтобы спасти Родину.
+                                    Немецкое командование рассчитывало завершить военную кампанию в России всего за
+                                    три-четыре месяца...
+                                </p>
+                            </div>
+                            <div class="video-image-container">
+                                <img src="assets/img/video-img.jpg" alt="Превью видео" class="video__image">
+                                <a
+                                    class="play-button"
+                                    data-fslightbox="data-fslightbox"
+                                    href="https://www.youtube.com/watch?v=hDzq67FM0kg&t=35s">
+                                    <svg
+                                        width="100"
+                                        height="100"
+                                        viewbox="0 0 100 100"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#C31432"/>
+                                        <path d="M69 49.5L39 67L39 32L69 49.5Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-left">
+                                <h3 class="video__title">Великая Война. 2 Серия. Киев 1941.</h3>
+                                <p class="video__description">После поражения в приграничном сражении в июне
+                                    1941 года советские части укрепились на линии Сталина. Шли бои с танковыми
+                                    дивизиями Клейста, попытки ворваться в Киев внезапной атакой не удались. Далее
+                                    последовали прорыв 1-й танковой группы немцев к Киеву и Бердичеву, окружение 6-й
+                                    и 12-й армий, атака десантников Родимцева и контрнаступление 37-й армии. Гитлер
+                                    принял решение об изменение стратегии плана «Барбаросса» из-за упорного
+                                    сопротивления советских войск на Украине. 2-я танковая группа Гудериана
+                                    направлена на юг, в тыл советскому Юго-Западному фронту. Начались бои на
+                                    подступах к Киеву и отход войск Юго-Западного фронта. Киев был оккупирован, а
+                                    события, произошедшие в Бабьем Яру, стали одними из первых свидетельств того,
+                                    какого рода новый порядок гитлеровская Германия собиралась установить на
+                                    территории СССР.</p>
+                            </div>
+                            <div class="video-image-container">
+                                <img src="assets/img/video-img.jpg" alt="Превью видео" class="video__image">
+                                <a
+                                    class="play-button"
+                                    data-fslightbox="data-fslightbox"
+                                    href="https://www.youtube.com/watch?v=t-0RLBTEf5k&list=PLhuA9d7RIOdZW5GMDfDzPZSIffFYUogL-&index=2">
+                                    <svg
+                                        width="100"
+                                        height="100"
+                                        viewbox="0 0 100 100"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#C31432"/>
+                                        <path d="M69 49.5L39 67L39 32L69 49.5Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-left">
+                                <h3 class="video__title">Великая Война. 3 Серия. Оборона Севастополя.</h3>
+                                <p class="video__description">
+                                    Оборона Севастополя: Бомбардировка румынских нефтепромыслов советской авиацией
+                                    летом 1941 года заставила немецкое командование сменить планы наступления и
+                                    перенацелить силы группы армий «Юг» на Крым.
+                                </p>
+                            </div>
+                            <div class="video-image-container">
+                                <img src="assets/img/video-img.jpg" alt="Превью видео" class="video__image">
+                                <a
+                                    class="play-button"
+                                    data-fslightbox="data-fslightbox"
+                                    href="https://www.youtube.com/watch?v=TUV8xQxVixs&list=PLhuA9d7RIOdZW5GMDfDzPZSIffFYUogL-&index=3">
+                                    <svg
+                                        width="100"
+                                        height="100"
+                                        viewbox="0 0 100 100"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#C31432"/>
+                                        <path d="M69 49.5L39 67L39 32L69 49.5Z" fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <button class="button button-prev"></button>
+                    <button class="button button-next"></button>
+                </div>
+            </section>
+            <!-- /.video -->
+            <section class="section section-stories container">
+                <div class="line">
+                    <h2 class="section__head">Истории</h2>
+                </div>
+                <!-- Slider main container -->
+                <div class="swiper-container-stories">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <figure class="stories__card ">
+                                <img src="assets/img/video-img.jpg" alt="Фото истории" class="card__image">
+                                <figcaption class="card__content">
+                                    <h3 class="card__title">заголовок</h3>
+                                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et in
+                                        consequatur eveniet, dolore iure necessitatibus asperiores numquam quos eos
+                                        cupiditate? Molestiae iste tempore tenetur dolores quasi nihil atque voluptate
+                                        perferendis laudantium quidem!</p>
+                                    <button class="card__button">подробнее</button>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="stories__card">
+                                <img src="assets/img/video-img.jpg" alt="Фото истории" class="card__image">
+                                <figcaption class="card__content">
+                                    <h3 class="card__title">заголовок</h3>
+                                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et in
+                                        consequatur eveniet, dolore iure necessitatibus asperiores numquam quos eos
+                                        cupiditate? Molestiae iste tempore tenetur dolores quasi nihil atque voluptate
+                                        perferendis laudantium quidem!</p>
+                                    <button class="card__button">подробнее</button>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="stories__card">
+                                <img src="assets/img/video-img.jpg" alt="Фото истории" class="card__image">
+                                <figcaption class="card__content">
+                                    <h3 class="card__title">заголовок</h3>
+                                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et in
+                                        consequatur eveniet, dolore iure necessitatibus asperiores numquam quos eos
+                                        cupiditate? Molestiae iste tempore tenetur dolores quasi nihil atque voluptate
+                                        perferendis laudantium quidem!</p>
+                                    <button class="card__button">подробнее</button>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <button class="button button-prev  button-prev-stories"></button>
+                    <button class="button button-next  button-next-stories"></button>
+                </div>
+            </section>
+            <!-- /.stories -->
+            <section class="section section-share container">
+                <div class="line">
+                    <h2 class="section__head">Поделись своей историей</h2>
+                </div>
+                <form class="share-form">
+                    <input type="text" placeholder="Имя" class="share__input share__name">
+                    <input
+                        type="number"
+                        placeholder="Номер телефона"
+                        class="share__input share__number">
+                    <textarea class="share__textarea" placeholder="История"></textarea>
+                    <button class="share__enter">Отправить</button>
+                    <fieldset class="subscribe__wrapper">
+                        <input type="email" class="share__subscribe" placeholder="Рассылка">
+                        <button class="share__button">Подписаться</button>
+                    </fieldset>
+                </form>
+            </section>
+            <section class="section section-cities container">
+                <div class="line">
+                    <h2 class="section__head">Города Герои</h2>
+                </div>
+                <div class="cities-cards">
+                    <figure class="cities__card">
+                        <div class="cities__image-container" data-title="Москва - город герой"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">30 сентября 1941 г. фашистские генералы отдали
+                                приказ о наступлении на Москву. План своего наступления фашисты назвали
+                                «Тайфун». Вот таким ураганом мечтали фашисты ворваться в Москву. Обойти ее с
+                                севера, с юга, схватить наши армии в огромные клещи и уничтожить.
+                                Немецко-фашистская армия имела преимущество в танках, самолетах, артиллерии,
+                                пехоте
+                                <span class="dots">...</span>
+                                <span class="more">Началось одно из крупных сражений Великой Отечественной
+                                    войны. Вся страна встала на защиту столицы. Руководил защитой Москвы командующий
+                                    Западный фронтом, генерал армии Г.K. Жуков, впоследствии маршал, выдающийся
+                                    полководец, герой Великой Отечественной войны. Гитлеровское командование
+                                    поставило задачу: овладеть Москвой к 16 октября 1941 года. Но фашисты не смогли
+                                    прорваться к Москве. Гигантское оборонительное сражение на подступах к столице
+                                    выиграли наша армия и наш народ. И не просто выиграли. 5-6 декабря 1941 г.
+                                    началось контрнаступление наших войск. Bраг был отброшен от столицы. В
+                                    наступлении участвовали 75 вражеских дивизий, почти половина всех вооруженных
+                                    сил противника. Разгром немцев под Москвой имел огромное значение. На полях
+                                    Подмосковья был развеян миф о непобедимости германской армии. 8 мая 1965 года
+                                    Москве присвоено звание «Город-герой».</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container" data-title="Минск – город - герой"><img
+                            src="assets/img/hero2.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">В историю Великой Отечественной войны Белоруссия
+                                вошла как страна партизан, а её столица – как город-боец. В Минске накануне
+                                войны насчитывалось 239 тысяч жителей. 23 июня 1941 года после адской
+                                бомбардировки фашистской авиации, центр города был буквально стёрт с лица земли.
+                                Гитлеровцы рвались к столице Белоруссии, откуда открывался прямой путь на Москву
+                                <span class="dots">...</span>
+                                <span class="more">28 июня 1941 г., преодолев упорное сопротивление советских
+                                    войск, враг захватил город. В период трехлетней оккупации трудящиеся Минска вели
+                                    героическую борьбу с захватчиками. В городе и области активно действовали
+                                    подпольщики и партизаны. Минское подполье вело большую работу по созданию
+                                    разведывательных и диверсионных групп и партизанских отрядов. 3 июля 1944 года
+                                    Минск освободили. Здесь оказалась зажатой в огненном кольце стотысячная армия
+                                    противника. Но какими страданиями, какими жертвами досталась свобода! Город был
+                                    разрушен и сожжён на 83 процента. Из 32 довоенных предприятий сохранилось 19. За
+                                    время войны погибло около 70 тысяч минчан.</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container" data-title="Волгоград – город- герой"><img
+                            src="assets/img/hero3.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Получив отпор под Москвой, фашистские войска
+                                летом 1942 года двинулись к реке Волге, к Сталинграду. Если бы им удалось
+                                захватить Сталинград, то над всем Советским Союзом нависла бы угроза разгрома.
+                                За рекой Волгой находились главные резервы Красной Армии. Попади они в руки
+                                фашистов – и лишилась бы она и танков, и самолётов
+                                <span class="dots">...</span>
+                                <span class="more">и снарядов – словом, всех резервов, накоп­ленных для
+                                    дальнейших ударов по врагу. «Волжской твердыней» назвали советские люди город
+                                    Сталинград. Фашистским войскам удалось прорваться в город, шли ожесточённые бои
+                                    за каждую городскую улицу, за каждый дом. Но советские солдаты останови­ли
+                                    наступление фашистов. Наши генералы решили окру­жить гитлеровские войска,
+                                    рвавшиеся к реке Волге. К началу зимних холодов 1942 года огромное количество
+                                    фашистских солдат было окружено и попало в плен. Множество танков, самолётов,
+                                    артиллерийских орудий было разбито меткими ударами советских войск. Это
+                                    поражение фашистов было настолько страшным для них, что во всей Германии был
+                                    объявлен многодневный траур. Сталинградская битва (17 июля 1942 г. – 2 февраля
+                                    1943 г.) явилась 1-ой крупной победой Красной Армии в Великой Отечественной
+                                    войне.</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                    <figure class="cities__card">
+                        <div class="cities__image-container"><img
+                            src="assets/img/hero1.jpg"
+                            alt="Москва - город герой"
+                            class="cities__image"></div>
+                        <figcaption class="cities__content">
+                            <p class="cities__description">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Magnam deserunt sequi quia tempora quod, distinctio dolorem et
+                                in consequatur eveniet, dolore iure
+                                <span class="dots">...</span>
+                                <span class="more">asperiores numquam quos eos cupiditate? Molestiae iste
+                                    tempore tenetur dolores quasi nihil atque voluptate perferendis laudantium
+                                    quidem!</span>
+                            </p>
+                            <button class="cities__button btn">Читать далее...</button>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <!-- /.main -->
+        <footer class="footer container">Разработано с любовью
+            <a href="vk.com/frdvmn" class="kek">Николаем</a>
+        </footer>
+        <!-- /.footer -->
+
+        <script src="assets/js/swiper-bundle.js"></script>
+        <script src="assets/js/fslightbox.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
