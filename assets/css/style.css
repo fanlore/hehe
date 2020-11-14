@@ -59,6 +59,9 @@ a {
     background: #FFFFFF;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
 }
+.page.no-scroll {
+    overflow: hidden;
+}
 /* Применяем max-width для замещаемых элементов и контролов формы. */
 audio,
 button,
@@ -94,6 +97,7 @@ progress {
     height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: "header" "main" "footer";
 }
 .progress {
     height: 5px;
@@ -101,13 +105,32 @@ progress {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
+}
+.main {
+    grid-area: main;
 }
 /* Шапка */
 .header {
     display: grid;
     grid-template-columns: 300px 1fr 100px;
     align-items: center;
+    grid-area: header;
+    width: 100%;
+    z-index: 999;
+    transition: 1s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    animation: header 1s ease;
+    animation-fill-mode: backwards;
+    transition: transform 200ms ease-in-out 0.3s;
+}
+.header-up {
+    transform: translateY(-100%);
+}
+.header-down {
+    transform: translateY(0);
 }
 .navigation {
     padding-left: 100px;
@@ -602,6 +625,7 @@ progress {
     display: grid;
     align-items: center;
     justify-items: center;
+    grid-area: footer;
 }
 .kek {
     padding: 10px;
@@ -635,6 +659,7 @@ progress {
 .mobile-navigation {
     position: fixed;
     left: -100%;
+    top: 0;
     right: 0;
     background: white;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
@@ -662,7 +687,7 @@ progress {
     position: absolute;
     right: -50px;
     border: none;
-    top: 0;
+    top: 8px;
     width: 40px;
     height: 40px;
     background: none;
@@ -726,7 +751,7 @@ progress {
 .open span::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 1px;
     width: 100%;
     background: black;
     display: block;
