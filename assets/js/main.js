@@ -12,6 +12,11 @@ var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable:true
+      },
 
     // Navigation arrows
     navigation: {
@@ -24,6 +29,11 @@ var mySwiperStories = new Swiper('.swiper-container-stories', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable:true
+      },
     slidesPerView: 3,
     breakpoints: {
         // when window width is >= 320px
@@ -78,7 +88,8 @@ cards.forEach(function(card){
 
 let buttons = document.querySelectorAll('.btn');
 buttons.forEach(function (button) {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
         let card = this.closest('.cities__content');
         let content = card.querySelector('.cities__description');
         let dots = content.querySelector('.dots');
@@ -110,5 +121,20 @@ close.addEventListener('click', function () {
         .classList
         .remove('active');
 })
+/*  плавный переход по якорям */ 
 
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for(let anchor of anchors) {
+    anchor.addEventListener('click',function(e){
+        e.preventDefault();
+        const blockID = anchor.getAttribute('href');
+        document.querySelector(' ' + blockID).scrollIntoView({
+            behavior:"smooth",
+            block:"start"
+        });
+    })
+}
+/* video photo gfallery*/ 
 require('fslightbox');
+

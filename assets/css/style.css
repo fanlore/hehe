@@ -6,6 +6,7 @@ html {
     height: 100%;
     font-family: 'roboto',sans-serif;
     background: rgb(229,229,229);
+    text-align: justify;
 }
 * {
     box-sizing: border-box;
@@ -638,6 +639,7 @@ progress {
     background: white;
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
     max-width: 280px;
+    height: 100%;
     height: 100vh;
     z-index: 999;
     display: grid;
@@ -739,7 +741,9 @@ progress {
     display: block;
     height: 2px;
 }
-
+.swiper-wrapper {
+    margin-bottom: 30px;
+}
 /* МЕДИА-ЗАПРОСЫ*/
 @media(max-width:1300px) {
     .header-input,
@@ -821,5 +825,9 @@ progress {
         overflow: hidden;
         z-index: 1;
         margin-top: 10px;
+    }
+    .button-next,
+    .button-prev {
+        display: none;
     }
 }
